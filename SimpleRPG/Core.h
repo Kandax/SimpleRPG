@@ -2,6 +2,10 @@
 #include <stdlib.h>
 #include <SFML/Graphics.hpp>
 
+#define APP_NAME "Simple RPG"
+#define WIN_WIDTH 640
+#define WIN_HEIGHT 720
+
 class Core {
 public:
 	Core();

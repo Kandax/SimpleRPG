@@ -1,8 +1,8 @@
 #include "Core.h"
 
 Core::Core()
-	: mWindowWidth(800)
-	, mWindowHeight(600)
+	: mWindowWidth(WIN_WIDTH)
+	, mWindowHeight(WIN_HEIGHT)
 	, mWindowName("Simple RPG")
 	, mWindow(sf::VideoMode(mWindowWidth, mWindowHeight), mWindowName)
 	, mEvent()
