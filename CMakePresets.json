@@ -11,7 +11,7 @@
             "CMAKE_C_COMPILER": "cl.exe",
             "CMAKE_CXX_COMPILER": "cl.exe",
             "CMAKE_TOOLCHAIN_FILE": {
-              "value": "E:/_Tools/vcpkg/scripts/buildsystems/vcpkg.cmake",
+              "value": "F:/vcpkg/vcpkg/scripts/buildsystems/vcpkg.cmake",
               "type": "PATH"
             }
           },
