@@ -6,7 +6,7 @@ cmake_minimum_required (VERSION 3.8)
 
 find_package(SFML COMPONENTS system window graphics CONFIG REQUIRED)
 # Add source to this project's executable.
-add_executable (SimpleRPG "Main.cpp"    "Core.h" "Core.cpp")
+add_executable (SimpleRPG "Main.cpp" "Core.h" "Core.cpp")
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET SimpleRPG PROPERTY CXX_STANDARD 20)
