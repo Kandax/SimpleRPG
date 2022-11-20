@@ -1,10 +1,18 @@
 #pragma once
 #include <stdlib.h>
+#include <iostream>
 #include <SFML/Graphics.hpp>
+
+#include "Time.h"
+
 
 #define APP_NAME "Simple RPG"
 #define WIN_WIDTH 640
 #define WIN_HEIGHT 720
+
+
+
+
 
 class Core {
 public:
@@ -32,5 +40,6 @@ private:
 	sf::RenderWindow mWindow;
 	sf::Event mEvent;
 
-
+	// Delta time
+	Time mTime;
 };

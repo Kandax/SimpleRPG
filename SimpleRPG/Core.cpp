@@ -6,6 +6,7 @@ Core::Core()
 	, mWindowName("Simple RPG")
 	, mWindow(sf::VideoMode(mWindowWidth, mWindowHeight), mWindowName)
 	, mEvent()
+	, mTime(60)
 {
 }
 
@@ -15,13 +16,22 @@ Core::~Core()
 
 void Core::run()
 {
-	while (mWindow.isOpen()) {
-		events();
-		input();
-		update();
-		render();
-
+	if (!loadMedia()) {
+		printf("Failed to load media!\n");
 	}
+	else {
+		while (mWindow.isOpen()) {
+			events();
+			input();
+			update();
+			render();
+			mTime.run();
+		}
+	}
+
+
+
+	
 
 }
 
